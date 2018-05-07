@@ -15,11 +15,11 @@ Keywords: Crypto Market, Big Data, Cross-sectional regression, Data Mining, Trad
 
 <h3>1 Previous Work</h3>
 
-Northfield US Fundamental Risk model (Northinfo., 2015) used fundamental risk factor to predict US stock market ang manage risk across factors. They demonstrate that a quantitative model can allow asset managers to control their risk exposure based on their factors. A factor is namely a signal that we use to trade on. It could be dividend yield, size or even value of one stock. A cross-sectional regression is used in their model to monitor the whole stock market. A cross-sectional regression is a time dependent regression against the whole situation of the market. For instance, we regress dividend yields of all stocks at time t against one predictor. One predictor could be the expected returns at time t+1.
+Northfield US Fundamental Risk model (Northinfo., 2015) used fundamental risk factor to predict US stock market and manage risk across factors. They demonstrate that a quantitative model can allow asset managers to control their risk exposure based on their factors. A factor is namely a signal that we use to trade on. It could be dividend yield, size or even value of one stock. A cross-sectional regression is used in their model to monitor the whole stock market. A cross-sectional regression is a time independent regression and check the overall situation of the market. For instance, we regress dividend yields of all stocks at time t against one predictor. One predictor could be the expected returns at time t+1.
 
 <h3> 2 Characteristics of the dataset </h3>
 
-Data was taken from Kaggle website (Vent J., 2017) that features every crypto data since 2013. Crypto markets is opened 24 hours 7days out of 7, hence unlike Stock market data, the Sharpe ratio should be compounded by sqrt(365) and not sqrt(252) to convert daily signals to annual. In addition, the dataset contains 700,000rows with Open, high, low, close and volume information. 
+Data was taken from Kaggle website (Vent J., 2017) that features every crypto historical data since 2013. Crypto markets is opened 24 hours 7days out of 7, hence unlike Stock market data, the Sharpe ratio should be compounded by sqrt(365) and not sqrt(252) to convert daily signals to annual. In addition, the dataset contains 700,000rows with Open, high, low, close and volume information. 
 
 <h3> 3 Overview of the system </h3>
 
@@ -37,7 +37,7 @@ The predominant indicators for predicting returns at time t+1 are:
  
 This means that we would hold a position of one day. In that scenario, we should carefully consider transaction costs and spread before making a trade. 
 
-The feature ret7 can provide an annual Sharpe Ratio of 6.29.
+The feature ret7 can provide an annual Sharpe Ratio of 6.29 before transaction costs and spread.
 The mean p-values of these indicators are available once you go through the code. The lowest p-value means that the value is statistically significant. In this paper, a p-value lower than 0.5 has more chances to be accurate.
 The mean R Squared is 0.5457959.
 
