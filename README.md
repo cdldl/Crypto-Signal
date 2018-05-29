@@ -6,6 +6,7 @@ The program consists of detecting the best signals in Crypto market.
    <h1> Crypto Market Cross-Sectional regression signals </h1>
 </p>
 Cyril de Lavergne cdldl@connect.ust.hk
+Thanks to Allen Kuo, who led me to these findings. 
 
 <h3>Abstract</h3>
 
